@@ -1,0 +1,253 @@
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Pale_blue: hsl(221, 100%, 96%);
+  --Light_lavender: hsl(241, 100%, 89%);
+  --Dark_gray_blue: hsl(224, 30%, 27%);
+  --Light_slate_blue: hsl(252, 100%, 67%);
+  --Light_royal_blue: hsl(241, 81%, 54%);
+  --Violet_blue: hsla(256, 72%, 46%, 1);
+  --Persian_blue: hsla(241, 72%, 46%, 0);
+  --Light_red: hsl(0, 100%, 67%);
+  --Orangey_yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt_blue: hsl(234, 85%, 45%);
+  --opdef: 0.8;
+}
+
+@font-face {
+  font-family: Hanken;
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body{
+  font-family: Hanken;
+  font-size: 18px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.left-card{
+  background-image: linear-gradient(0deg, var(--Light_royal_blue), var(--Light_slate_blue));
+  height: 410px;
+  width: 350px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-para{
+  color: var(--Pale_blue);
+  padding-top: 10px;
+  opacity: var(--opdef);
+  font-weight: 600;
+  
+}
+
+.circle{
+  
+  height: 150px;
+  width: 150px;
+  border-radius: 125px;
+  background-image: linear-gradient(180deg,var(--Violet_blue), var(--Persian_blue));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.circle p{
+  margin-top: -10px;
+  opacity: var(--opdef);
+  padding-top: 4px;
+  color: var(--Pale_blue);
+
+}
+
+.great-para{
+  color: var(--White);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  
+}
+
+.info-para{
+  color: var(--Pale_blue);
+  text-align: center;
+  margin-top: 0;
+  padding-top: 10px;
+  font-size: 14px;
+  opacity: var(--opdef);
+}
+
+.left-sec-div{
+  width: 200px;
+  margin-top: 10px;
+}
+
+.left-card h1{
+  color: var(--White);
+  font-size: 55px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+}
+
+.right-card{
+  background-color: var(--White);
+  height: 410px;
+  width: 350px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 10px 10px 10px 0.5px rgba(0, 0, 0, 0.08);
+  
+}
+
+.summary{
+  padding-top: 10px;
+  padding-left: 30px;
+  font-weight: bolder;
+  color: var(--Dark_gray_blue);
+  font-size: 20px;
+}
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.reaction, .verbal, .memory{
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  display: grid;
+  grid-template-columns: 25px 1fr 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 100%, 67%, 0.04);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.visual{
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  display: grid;
+  grid-template-columns: 25px 1fr 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(234, 85%, 45%, 0.04);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.verbal{
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  display: grid;
+  grid-template-columns: 25px 1fr 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(166, 100%, 37%, 0.08);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.memory{
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  display: grid;
+  grid-template-columns: 25px 1fr 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(39, 100%, 56%, 0.08);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+.rmvv{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: gray;
+  opacity: var(--opdef);
+}
+
+.reaction_color{
+  color: var(--Light_red);
+}
+
+.memory_color{
+  color: var(--Orangey_yellow);
+}
+
+.verbal_color{
+  color: var(--Green-teal);
+}
+
+.visual_color{
+  color: var(--Cobalt_blue);
+}
+
+.score-color{
+  color: var(--Dark_gray_blue);
+}
+
+button{
+  background-color: var(--Dark_gray_blue);
+  color: var(--White);
+  border: none;
+  font-family: Hanken;
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 40px;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: 1s;
+}
+button:hover{
+  cursor: pointer;
+  background-image: linear-gradient(360deg, var(--Light_royal_blue), var(--Light_slate_blue));
+}
+
+/* Moblile Design */
+
+@media only screen and (max-width: 450px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .left-card{
+    width: 300px;
+  }
+
+  .right-card{
+    border-radius: 0px;
+    box-shadow: none;
+  }
+}
